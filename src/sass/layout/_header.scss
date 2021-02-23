@@ -5,11 +5,12 @@
 //   padding-bottom: 50px;
 // }
 
-.header-link-logo-wrapper {
+.header-link-logo-wrapper .logo {
   display: flex;
 }
 
 .el-logo-one {
+  display: inline-block;
   width: 20px;
   height: 20px;
   background-color: #9c69e2;
@@ -17,6 +18,7 @@
 }
 
 .el-logo-two {
+  display: inline-block;
   width: 20px;
   height: 35px;
   background-color: #f063b8;
