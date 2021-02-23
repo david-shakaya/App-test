@@ -29,3 +29,20 @@
   border: 0px;
   background-color: transparent;
 }
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+// стили для телефона
+
+// @media screen and (max-width:1139px){
+// .menu-wrapper-tel{
+
+// }
+// }
+
+.menu-wrapper-tel {
+  display: none;
+}
