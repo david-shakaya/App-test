@@ -11,9 +11,11 @@
 }
 
 .header-link-logo {
-  width: 28px;
-  height: 20px;
-  margin-right: 229px;
+  @media screen and (max-width: 1139px) {
+    width: 28px;
+    height: 20px;
+    margin-right: 229px;
+  }
 
   &-wrapper {
     display: flex;
@@ -110,5 +112,102 @@
 
   .body .active {
     overflow: hidden;
+  }
+}
+
+// CТИЛИ ДЛЯ ПК
+
+@media screen and (min-width: 1140px) {
+  .close-mobile-menu,
+  .menu-btn-tel {
+    display: none;
+  }
+  .header {
+    padding-top: 50px;
+  }
+
+  .header-link-logo {
+    margin-right: 121px;
+  }
+  .el-logo-one {
+    width: 20px;
+    height: 20px;
+    margin-right: 9px;
+    margin-top: 15px;
+  }
+
+  .el-logo-two {
+    width: 20px;
+    height: 35px;
+  }
+
+  .menu-btn-search-tel {
+    position: absolute;
+  }
+  .menu-wrapper-tel {
+    display: flex;
+    align-items: center;
+  }
+
+  .navigation {
+    margin-right: 418px;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .menu-list-item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  .menu-link {
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: $subtitle-color;
+
+    &.menu-link-about {
+      padding-right: 6px;
+      font-weight: 800;
+      color: $title-color;
+    }
+  }
+
+  .header-btn-modal {
+    border: none;
+    width: 210px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 29px;
+    background: #ffffff;
+    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    border-radius: 50px;
+
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 26px;
+    align-items: center;
+  }
+
+  .backround-btn-modal {
+    display: inline-block;
+    width: 20px;
+    height: 14px;
+    vertical-align: middle;
+    margin-left: 21px;
+    background-image: url(../images/arrow-btn.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .body {
+    background: linear-gradient(180deg, #f6fafd 0%, #ffffff 19.4%);
   }
 }
