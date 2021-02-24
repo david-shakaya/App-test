@@ -1,5 +1,6 @@
 .features-section {
   padding-top: 62px;
+  padding-bottom: 48px;
 }
 
 .features-title {
@@ -69,6 +70,7 @@
   width: 176px;
   height: 159px;
   background-size: contain;
+  background-repeat: no-repeat;
   margin-left: 38px;
   margin-bottom: 17px;
 
@@ -78,6 +80,12 @@
 
   &.img-security {
     background-image: url(../images/features-section/security.png);
+  }
+  &.img-print {
+    background-image: url(../images/features-section/print.png);
+  }
+  &.img-hours-access {
+    background-image: url(../images/features-section/hours-access.png);
   }
 }
 
@@ -107,4 +115,15 @@
   font-size: 16px;
   line-height: 26px;
   color: $title-color;
+}
+
+.features-link-background {
+  display: inline-block;
+  width: 20px;
+  height: 14px;
+  vertical-align: middle;
+  margin-left: 8px;
+  background-image: url(../images/arrow-btn.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
