@@ -5,34 +5,47 @@
 //   padding-bottom: 50px;
 // }
 
-.header-link-logo-wrapper .logo {
-  display: flex;
+.header {
+  padding-top: 20px;
+}
+
+.header-link-logo {
+  width: 28px;
+  height: 20px;
+  margin-right: 229px;
+
+  &-wrapper {
+    display: flex;
+  }
 }
 
 .el-logo-one {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 11.4px;
+  height: 11.4px;
   background-color: #9c69e2;
   border-radius: 20px;
+  margin-right: 5px;
+  margin-top: 8.5px;
 }
 
 .el-logo-two {
   display: inline-block;
-  width: 20px;
-  height: 35px;
+  width: 11.4px;
+  height: 20px;
   background-color: #f063b8;
   border-radius: 20px;
 }
 
-.menu-btn-tel {
-  border: 0px;
-  background-color: transparent;
-}
-
 .header-wrapper {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-btn-search-tel {
+  // margin-left: 229px;
+  height: 24px;
+  margin-right: 25px;
 }
 
 // стили для телефона
