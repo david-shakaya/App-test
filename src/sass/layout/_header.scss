@@ -43,7 +43,6 @@
 }
 
 .menu-btn-search-tel {
-  height: 24px;
   margin-right: 25px;
 }
 
@@ -130,6 +129,10 @@
     padding-top: 50px;
   }
 
+  .header-wrapper {
+    position: relative;
+  }
+
   .header-link-logo {
     margin-right: 121px;
   }
@@ -147,6 +150,7 @@
 
   .menu-btn-search-tel {
     position: absolute;
+    left: 532px;
   }
 
   .menu-btn-search-icon {
