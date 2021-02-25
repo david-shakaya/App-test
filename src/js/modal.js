@@ -21,7 +21,6 @@ function showModal() {
             name="name"
             id="user-name"
             placeholder="Peter"
-            maxlength="30"
             required
           />
         </div>
@@ -34,7 +33,6 @@ function showModal() {
             name="email"
             id="user-email"
             placeholder="peter123@gmail.com"
-            maxlength="50"
             required
           />
         </div>
@@ -45,7 +43,6 @@ function showModal() {
             class="form-input"
             type="url"
             name="web"
-            maxlength="50"
             id="user-web"
             placeholder="https://peter-parker.com"
             required
@@ -53,13 +50,12 @@ function showModal() {
         </div>
       </div>
 
-      <div>
+      <div class="textarea-container">
         <label class="form-label" for="message">Message</label>
         <textarea
           class="form-textarea"
           name="message"
           rows="3"
-          maxlength="200"
           id="message"
         ></textarea>
       </div>

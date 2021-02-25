@@ -11,14 +11,9 @@
     #68c9ba 30px
   );
 
-  @media screen and (min-width: 1140px) {
-    width: 1140px;
+  @media screen and (min-width: 1200px) {
+    width: 1120px;
   }
-}
-
-textarea[rows='3'] {
-  border: none;
-  border-bottom: 2px solid red;
 }
 
 .form {
@@ -37,35 +32,54 @@ textarea[rows='3'] {
   color: #212353;
   text-align: center;
 
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 65px;
     font-size: 40px;
   }
 }
 
 .form-content {
+  position: relative;
   margin-bottom: 20px;
 
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     margin-bottom: 31px;
-  }
-}
-
-.form-field:not(:last-child) {
-  margin-bottom: 20px;
-
-  @media screen and (min-width: 1140px) {
-    margin-bottom: 44px;
   }
 }
 
 .form-fields {
   margin-bottom: 20px;
 
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
     margin-right: 40px;
     margin-bottom: 0;
+  }
+}
+
+.form-field {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 44px;
+    }
+  }
+
+  &::after {
+    content: ' ';
+    position: absolute;
+    transform: translate(0, 220px);
+    display: block;
+    width: 207px;
+    height: 2px;
+    background-color: #9c69e2;
+
+    @media screen and (min-width: 1200px) {
+      transform: translate(516px, -2px);
+      width: 476px;
+      z-index: 1000;
+    }
   }
 }
 
@@ -82,6 +96,10 @@ textarea[rows='3'] {
   border: none;
   border-bottom: 2px solid #9c69e2;
 
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+
   &:not(:placeholder-shown):valid {
     border-color: green;
   }
@@ -90,8 +108,21 @@ textarea[rows='3'] {
     border-color: red;
   }
 
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
     width: 476px;
+  }
+}
+
+.textarea-container {
+  @media screen and (min-width: 1200px) {
+    position: relative;
+  }
+}
+
+.textarea-container > .form-label {
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    z-index: 1000;
   }
 }
 
@@ -101,21 +132,15 @@ textarea[rows='3'] {
   padding: 0;
   border: none;
   resize: none;
-  line-height: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 4.8;
 
-  //   textarea[rows='3'] {
-  //     border: none;
-  //     letter-spacing: normal;
-  //     line-height: 91px;
-  //     /* border-bottom: 2px solid red; */
-  //     display: inline-block;
-  //     position: relative;
-  //     top: -31px;
-  // }
-
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    transform: translate(0, -10px);
     width: 476px;
-    line-height: 5;
+    line-height: 6.5;
   }
 }
 
@@ -133,7 +158,8 @@ textarea[rows='3'] {
   color: #ffffff;
   background-color: #9c69e2;
 
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
     margin-right: 0;
+    position: relative;
   }
 }
