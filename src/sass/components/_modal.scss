@@ -1,0 +1,139 @@
+.modal {
+  width: 335px;
+  border-radius: 50px;
+  padding: 30px;
+
+  background-image: repeating-linear-gradient(
+    -60deg,
+    #ffffff,
+    #ffffffff 20px,
+    #68c9ba 20px,
+    #68c9ba 30px
+  );
+
+  @media screen and (min-width: 1140px) {
+    width: 1140px;
+  }
+}
+
+textarea[rows='3'] {
+  border: none;
+  border-bottom: 2px solid red;
+}
+
+.form {
+  width: auto;
+  border-radius: 50px;
+  padding: 34px 34px 38px;
+  background-color: #ffffff;
+}
+
+.form-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 1.3;
+  color: #212353;
+  text-align: center;
+
+  @media screen and (min-width: 1140px) {
+    margin-bottom: 65px;
+    font-size: 40px;
+  }
+}
+
+.form-content {
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1140px) {
+    display: flex;
+    margin-bottom: 31px;
+  }
+}
+
+.form-field:not(:last-child) {
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1140px) {
+    margin-bottom: 44px;
+  }
+}
+
+.form-fields {
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1140px) {
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
+}
+
+.form-label {
+  display: block;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #212353;
+}
+
+.form-input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #9c69e2;
+
+  &:not(:placeholder-shown):valid {
+    border-color: green;
+  }
+
+  &:not(:placeholder-shown):invalid {
+    border-color: red;
+  }
+
+  @media screen and (min-width: 1140px) {
+    width: 476px;
+  }
+}
+
+.form-textarea {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  resize: none;
+  line-height: 20px;
+
+  //   textarea[rows='3'] {
+  //     border: none;
+  //     letter-spacing: normal;
+  //     line-height: 91px;
+  //     /* border-bottom: 2px solid red; */
+  //     display: inline-block;
+  //     position: relative;
+  //     top: -31px;
+  // }
+
+  @media screen and (min-width: 1140px) {
+    width: 476px;
+    line-height: 5;
+  }
+}
+
+.form-submit-btn {
+  display: block;
+  min-width: 170px;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-radius: 50px;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ffffff;
+  background-color: #9c69e2;
+
+  @media screen and (min-width: 1140px) {
+    margin-right: 0;
+  }
+}
