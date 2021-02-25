@@ -137,7 +137,11 @@
 @media screen and (min-width: 1140px) {
   .features-section {
     padding-top: 87px;
-    padding-bottom: 48px;
+    padding-bottom: 131.5px;
+  }
+
+  .features-title-wrapper {
+    margin-bottom: 71px;
   }
 
   .features-title {
@@ -186,6 +190,9 @@
 
     &.item-img-print {
       background-image: url(../images/features-section/Rectangle-print.png);
+    }
+    &.item-img-access {
+      background-image: url(../images/features-section/Rectangle-access.png);
     }
   }
 
@@ -240,5 +247,13 @@
     height: 185px;
     top: 70px;
     right: 303px;
+  }
+
+  .features-link {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  .features-link-background {
+    margin-left: 20px;
   }
 }

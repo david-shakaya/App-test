@@ -191,33 +191,4 @@
       color: $title-color;
     }
   }
-
-  .header-btn-modal {
-    display: inherit;
-    border: none;
-    padding-top: 17px;
-    padding-bottom: 17px;
-    padding-left: 29px;
-    padding-right: 29px;
-    background: #ffffff;
-    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
-    border-radius: 50px;
-
-    font-style: normal;
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 26px;
-    align-items: center;
-  }
-
-  .backround-btn-modal {
-    display: inline-block;
-    width: 20px;
-    height: 14px;
-    vertical-align: middle;
-    margin-left: 21px;
-    background-image: url(../images/arrow-btn.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
 }
