@@ -153,11 +153,19 @@
   .features-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
   }
 
   .features-list-item {
     position: relative;
-    margin-right: 50px;
+
+    &:nth-child(2n + 1) {
+      margin-right: 146px;
+    }
+
+    &:nth-child(-n + 2) {
+      margin-bottom: 80px;
+    }
     // width: 442px;
     // height: 358px;
   }
@@ -166,22 +174,23 @@
     height: 358px;
     border-radius: 50px;
     z-index: -1;
-    background-image: url(../images/features-section/Rectangle-data.png);
     background-size: cover;
     background-repeat: no-repeat;
+
+    &.item-img-data {
+      background-image: url(../images/features-section/Rectangle-data.png);
+    }
+    &.item-img-security {
+      background-image: url(../images/features-section/Rectangle-secur.png);
+    }
+
+    &.item-img-print {
+      background-image: url(../images/features-section/Rectangle-print.png);
+    }
   }
-  // .img-data {
-  //   top: 62px;
-  //   z-index: 1;
-  //   right: 299px;
-  //   display: block;
-  //   width: 232px;
-  //   height: 211px;
-  //   background-size: contain;
-  //   background-repeat: no-repeat;
-  // }
 
   .features-list-item-wrapper-content {
+    position: static;
     padding-top: 49px;
     padding-bottom: 33px;
     padding-left: 172px;
@@ -205,10 +214,31 @@
     position: absolute;
   }
 
-  // .features-list-item-title {
-  // }
+  .img-data {
+    top: 72px;
+    right: 299px;
+    width: 232px;
+    height: 211px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .img-security {
+    width: 230px;
+    height: 201px;
+    top: 86px;
+    right: 309px;
+  }
+  .img-print {
+    width: 245px;
+    height: 181px;
+    top: 123px;
+    right: 305px;
+  }
 
-  .features-list-item-wrapper-content {
-    position: static;
+  .img-hours-access {
+    width: 241px;
+    height: 185px;
+    top: 70px;
+    right: 303px;
   }
 }
