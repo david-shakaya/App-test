@@ -21,6 +21,7 @@
   padding-bottom: 80px;
   padding-right: 371px;
   padding-left: 104px;
+  margin-bottom: 30px;
 }
 
 .hero-title {
@@ -58,4 +59,29 @@
   font-size: 18px;
   line-height: 29px;
   color: #ffffff;
+}
+.pagination-slider-list {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination-slider-list-item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  & > button {
+    display: block;
+    cursor: pointer;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(156, 105, 226, 0.2);
+    border: 0px;
+    padding: 0px;
+  }
+
+  & > .active-pagination {
+    background-color: $btn-color;
+  }
 }

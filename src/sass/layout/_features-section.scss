@@ -22,23 +22,28 @@
   margin-bottom: 99px;
 }
 
-.features-list-item {
-  position: relative;
-  width: 335px;
-  height: 392px;
+@media screen and (max-width: 1139px) {
+  .features-list-item {
+    position: relative;
+    width: 335px;
+    height: 392px;
 
-  &:not(:last-child) {
-    margin-bottom: 90px;
+    &:not(:last-child) {
+      margin-bottom: 90px;
+    }
   }
 }
-
 .features-list-item-wrapper-backgr {
   position: absolute;
-  background: #68c9ba;
-  opacity: 0.1;
-  border-radius: 50px;
-  width: 335px;
-  height: 392px;
+
+  @media screen and (max-width: 1139px) {
+    background: #68c9ba;
+    opacity: 0.1;
+    border-radius: 50px;
+
+    width: 335px;
+    height: 392px;
+  }
 }
 
 .features-list-item-wrapper-content {
@@ -47,7 +52,6 @@
   left: 40px;
   bottom: 47px;
 }
-
 .features-background-vector {
   position: absolute;
   display: inline-block;
@@ -126,4 +130,85 @@
   background-image: url(../images/arrow-btn.png);
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+/* -----СТИЛИ ДЛЯ ПК---- */
+
+@media screen and (min-width: 1140px) {
+  .features-section {
+    padding-top: 87px;
+    padding-bottom: 48px;
+  }
+
+  .features-title {
+    text-align: center;
+  }
+
+  .features-subtitle {
+    width: 584px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .features-list-item {
+    position: relative;
+    margin-right: 50px;
+    // width: 442px;
+    // height: 358px;
+  }
+  .features-list-item-wrapper-backgr {
+    width: 442px;
+    height: 358px;
+    border-radius: 50px;
+    z-index: -1;
+    background-image: url(../images/features-section/Rectangle-data.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  // .img-data {
+  //   top: 62px;
+  //   z-index: 1;
+  //   right: 299px;
+  //   display: block;
+  //   width: 232px;
+  //   height: 211px;
+  //   background-size: contain;
+  //   background-repeat: no-repeat;
+  // }
+
+  .features-list-item-wrapper-content {
+    padding-top: 49px;
+    padding-bottom: 33px;
+    padding-left: 172px;
+    padding-right: 50px;
+    width: inherit;
+  }
+
+  .features-list-item-title {
+    width: 200px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+
+  .features-list-item-subtitle {
+    width: 220px;
+    height: 160px;
+    margin-bottom: 20px;
+  }
+
+  .features-background-img {
+    position: absolute;
+  }
+
+  // .features-list-item-title {
+  // }
+
+  .features-list-item-wrapper-content {
+    position: static;
+  }
 }
