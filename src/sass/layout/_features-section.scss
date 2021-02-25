@@ -256,4 +256,64 @@
   .features-link-background {
     margin-left: 20px;
   }
+
+  /* -----фигуры списка features--------- */
+  .features-background-vector-ellipse {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .vector-data {
+    width: 203px;
+    height: 118px;
+    top: 22px;
+    left: 208px;
+  }
+
+  .ellipse-data {
+    width: 38px;
+    height: 23px;
+    top: 49px;
+    left: 286px;
+    background-image: url(../images/features-section/ellipse.png);
+  }
+
+  .vector-security {
+    background-image: url(../images/features-section/Vector-security.png);
+    width: 317px;
+    height: 226px;
+    transform: rotate(1deg);
+    top: 24px;
+    left: 55px;
+  }
+  .ellipse-security {
+    width: 61px;
+    height: 68px;
+    top: 286px;
+    left: 354px;
+    background-image: url(../images/features-section/ellipse.png);
+  }
+
+  .vector-print {
+    background-image: none;
+  }
+
+  .ellipse-print {
+    width: 69px;
+    height: 54px;
+    top: 32px;
+    transform: rotate(-50deg);
+    left: 345px;
+    background-image: url(../images/features-section/ellipse.png);
+  }
+
+  .vector-access {
+    background-image: url(../images/features-section/Vector-security.png);
+    width: 259px;
+    height: 154px;
+    transform: rotate(58deg);
+    top: 222px;
+    left: 200px;
+  }
 }
