@@ -26,15 +26,6 @@
     margin-bottom: 10px;
   }
 
-  .address-map {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 29px;
-    text-align: center;
-    letter-spacing: 0.01em;
-    color: $title-color;
-  }
   .footer-list-communication {
     margin-bottom: 24px;
   }
@@ -44,6 +35,15 @@
   }
 }
 
+.address-map {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: $title-color;
+}
 .footer-link-mail,
 .footer-link-tel {
   font-style: normal;
@@ -129,7 +129,7 @@
 
   .footer-wrapper-nav {
     display: flex;
-    justify-content: space-between;
+    margin-bottom: 92px;
   }
 
   .footer-link-logo-wrapper {
@@ -147,8 +147,94 @@
       margin-right: 20px;
     }
   }
+
+  .wrapper-logo-address {
+    margin-right: 140px;
+  }
   .wrapper-logo {
     position: relative;
     top: -3px;
+    margin-bottom: 67px;
+  }
+
+  .wrapper-address {
+    margin-bottom: 10px;
+  }
+
+  .address-map {
+    width: 335px;
+    text-align: start;
+  }
+  .footer-list-communication {
+    width: 335px;
+  }
+  .footer-wrapper-about {
+    width: 166px;
+    margin-right: 69px;
+    & > b {
+      font-style: normal;
+      font-weight: 900;
+      font-size: 16px;
+      line-height: 26px;
+      color: $title-color;
+    }
+  }
+  .footer-list-about {
+    margin-top: 30px;
+  }
+
+  .footer-link-item-about {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 40px;
+    color: $title-color;
+  }
+
+  .footer-wrapper-help {
+    width: 166px;
+    margin-right: 66px;
+
+    & > b {
+      font-weight: 800;
+      font-size: 16px;
+      line-height: 26px;
+      color: $title-color;
+    }
+  }
+  .footer-list-help {
+    margin-top: 30px;
+  }
+
+  .footer-link-item-help {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 40px;
+    color: $title-color;
+  }
+
+  .footer-wrapper-social-media > b {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 26px;
+    color: $title-color;
+  }
+
+  .footer-list-social-media {
+    margin-top: 30px;
+  }
+
+  .copyright {
+    width: 360px;
+  }
+
+  .text-copyright {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: $title-color;
   }
 }
