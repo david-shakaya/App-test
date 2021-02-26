@@ -25,7 +25,7 @@
 @media screen and (max-width: 1139px) {
   .features-list-item {
     position: relative;
-    width: 335px;
+    max-width: 335px;
     height: 392px;
 
     &:not(:last-child) {
@@ -41,13 +41,14 @@
     opacity: 0.1;
     border-radius: 50px;
 
-    width: 335px;
+    width: 100%;
     height: 392px;
   }
 }
 
 .features-list-item-wrapper-content {
   position: absolute;
+
   width: 286px;
   left: 40px;
   bottom: 47px;
