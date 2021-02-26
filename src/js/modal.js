@@ -19,6 +19,7 @@ function showModal() {
             class="form-input"
             type="text"
             name="name"
+            maxlength="40"
             id="user-name"
             placeholder="Peter"
             required
@@ -31,6 +32,7 @@ function showModal() {
             class="form-input"
             type="email"
             name="email"
+             maxlength="40"
             id="user-email"
             placeholder="peter123@gmail.com"
             required
@@ -43,6 +45,7 @@ function showModal() {
             class="form-input"
             type="url"
             name="web"
+            maxlength="50"
             id="user-web"
             placeholder="https://peter-parker.com"
             required
