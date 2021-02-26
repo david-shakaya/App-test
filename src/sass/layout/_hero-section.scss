@@ -11,7 +11,7 @@
   //   top: 0;
   //   position: absolute;
   background-size: cover;
-  background-image: url(../images/hero-img.jpg);
+
   background-repeat: no-repeat;
   max-width: 1120px;
   height: 560px;
@@ -22,6 +22,16 @@
   padding-right: 371px;
   padding-left: 104px;
   margin-bottom: 30px;
+}
+
+#img1 {
+  background-image: url(../images/hero-img.jpg);
+}
+#img2 {
+  background-image: url(../images/priroda.jpg);
+}
+#img3 {
+  background-image: url(../images/priroda2.jpg);
 }
 
 .hero-title {
