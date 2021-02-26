@@ -56,6 +56,7 @@ function showModal() {
           class="form-textarea"
           name="message"
           rows="3"
+          maxlength="150"
           id="message"
         ></textarea>
       </div>
